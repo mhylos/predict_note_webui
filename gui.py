@@ -168,7 +168,7 @@ def linear_regression(pc: PC):
     prediction = lr_model.predict(test)[0][0]
 
     results_container.markdown(
-        f"## Predicción: :red-background[$ {'{:20.2f}'.format(prediction if prediction > 0 else 0)} CLP]")
+        f"## Predicción: :red-background[$ {'{:20,.2f}'.format(prediction if prediction > 0 else 0)} CLP]")
 
     results_container.markdown(
         f"#### Precisión: :red-background[{'{:5.4f}'.format(0.7493259578443761*100)} %]")
